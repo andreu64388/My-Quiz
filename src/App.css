@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz_main {
+  border-radius: 50px;
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  position: relative;
+}
+.quiz_main .true {
+  width: 100%;
+  border-radius: 50px;
+  height: 100%;
+  font-size: 13px;
+  background-color: rgb(220, 203, 203);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quiz_main .content {
+  display: flex;
+  border-radius: 50px;
+  height: 100%;
+  overflow: hidden;
+}
+.quiz_main .content .answers {
+  background-color: red;
+  width: 100%;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.quiz_main .content .answers button {
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+.quiz_main .content .answers button:hover {
+  background-color: #5f4e4e;
+  color: white;
+}
+.quiz_main .content .question {
+  padding: 15px;
+  background-color: blue;
+  width: 100%;
+  flex: 1;
+}
+.quiz_main .content .question .text_osnova_question {
+  text-align: center;
+  color: white;
+}
+.quiz_main .content .question .text_osnova_question {
+  margin-top: 20px;
+  text-align: middle;
+  color: white;
+}
+.quiz_main .text_osnova {
+  color: white;
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  right: 0px;
+  font-size: 40px;
+  text-align: center;
+}/*# sourceMappingURL=App.css.map */
