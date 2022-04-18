@@ -6,21 +6,6 @@ const QuizMain: FC = () => {
    const [current, setCurrent] = useState<number>(0)
    const [show, setShow] = useState<boolean>(false)
    const [message, setMesages] = useState<string>("")
-
-
-   const handleClick = (isTrue: boolean, index: number) => {
-
-      if (isTrue) {
-         setCounter(counter + 1)
-      }
-      if (current >= quiz.length - 1) {
-         setShow(true)
-      }
-      setCurrent(prev => prev + 1)
-
-   }
-
-
    useEffect(() => {
       if (counter < 3) {
          setMesages("Ты меня очень плохо знаешь")
@@ -35,6 +20,20 @@ const QuizMain: FC = () => {
          setMesages("Ты меня очень хорошо знаешь")
       }
    }, [counter])
+   const handleClick = (isTrue: boolean, index: number) => {
+
+      if (isTrue) {
+         setCounter(counter + 1)
+      }
+      if (current >= quiz.length - 1) {
+         setShow(true)
+      }
+      setCurrent(prev => prev + 1)
+
+   }
+
+
+
 
    return (
       <div className='quiz_main'>
